@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="/script.js"></script>
+  <title>Drum'n'🦦</title>
+</head>
+
+<body>
+  <div class="container-fluid" id="drum-machine">
+    <div class="row text-center">
+      <h1>Drum'n'🦦</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <!-- drum machine (buttons n shit) here -->
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-0" onclick="play('Q')">
+            Q
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/80[kb]african-pe-hi.wav.mp3" class="clip" id="Q"></audio>
+          </button>
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-1" onclick="play('W')">
+            W
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/90[kb]african-pe-lo.wav.mp3" class="clip" id="W"></audio>
+          </button>
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-2" onclick="play('E')">
+            E
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/91[kb]african-pe-med.wav.mp3" class="clip" id="E"></audio>
+          </button>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-3" onclick="play('A')">
+            A
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/167[kb]bendy.aif.mp3" class="clip" id="A"></audio>
+          </button>
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-4" onclick="play('S')">
+            S
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/110[kb]bigbend.aif.mp3" class="clip" id="S"></audio>
+          </button>
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-5" onclick="play('D')">
+            D
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/32[kb]blobble.aif.mp3" class="clip" id="D"></audio>
+          </button>
+        </div>
+        <div class="d-grid gap-2 d-md-block">
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-6" onclick="play('Z')">
+            Z
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/45[kb]solid-tabla-hit.aif.mp3" class="clip" id="Z"></audio>
+          </button>
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-7" onclick="play('X')">
+            X
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/79[kb]SteelDrum-vs.aif.mp3" class="clip" id="X"></audio>
+          </button>
+          <button class="btn btn-primary drum-pad" type="button" id="drum-sound-8" onclick="play('C')">
+            C
+            <audio src="https://sampleswap.org/samples-ghost/DRUMS%20(SINGLE%20HITS)/African%20and%20Eastern%20Percussion/152[kb]verby-cajon-bass.wav.mp3" class="clip" id="C"></audio>
+          </button>
+        </div>
+      </div>
+      <!-- display interface here -->
+      <div class="col-6 card text-center" id="display">
+        <div class="card-body">
+          Audio thing will appear here
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
